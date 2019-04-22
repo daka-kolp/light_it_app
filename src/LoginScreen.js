@@ -22,7 +22,7 @@ export default class LoginScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.title}>Light_It</Text>
+                <Text style={styles.header}>Light_It</Text>
                 <KeyboardAvoidingView>
                     <TextInput
                         style={styles.input}
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
         backgroundColor: darkBackgroundColor,
 
     },
-    title: {
+    header: {
         marginTop: 16,
         color: lightTextColor,
         textAlign: 'center',

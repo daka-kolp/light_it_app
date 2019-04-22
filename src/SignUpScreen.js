@@ -7,11 +7,7 @@ import {
     TouchableOpacity,
     KeyboardAvoidingView,
 } from 'react-native'
-import {
-    darkBackgroundColor, darkButtonColor,
-    darkTextColor,
-    inputBackgroundColor, lightTextColor
-} from "./res/colors"
+import {darkBackgroundColor, darkButtonColor, darkTextColor, inputBackgroundColor, lightTextColor} from "./res/colors"
 
 export default class SignUpScreen extends React.Component {
     state = {
@@ -23,8 +19,8 @@ export default class SignUpScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.title}>Sign Up</Text>
-                <KeyboardAvoidingView >
+                <Text style={styles.header}>Sign Up</Text>
+                <KeyboardAvoidingView>
                     <TextInput
                         style={styles.input}
                         value={this.state.name}
@@ -68,7 +64,7 @@ const styles = StyleSheet.create({
         backgroundColor: darkBackgroundColor,
         padding: 16
     },
-    title: {
+    header: {
         color: lightTextColor,
         textAlign: 'center',
         fontSize: 20

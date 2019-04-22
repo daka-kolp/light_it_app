@@ -6,7 +6,7 @@ import Products from "./src/Products";
 export default class App extends Component<Props> {
   render() {
     return (
-      <SignUpScreen/>
+      <Products/>
     );
   }
 }
